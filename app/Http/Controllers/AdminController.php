@@ -30,7 +30,7 @@ class AdminController extends Controller
             Auth::guard('admin')->login($user);
             return redirect()->route('admin.home');
         }
-        return redirect()->route('admin.login')->with('status', 'Failed To Process Login');
+        return redirect()->route('admin.home')->with('status', 'Failed To Process Login');
     }
 
  
@@ -57,5 +57,22 @@ class AdminController extends Controller
     protected function guard(){
         return Auth::guard('admin');
     }
+
+
+
+    public function admin_dashboard(Request $request)
+    {
+        return view('admin.profile.admin_dashboard');
+    }
+
+
+    public function inbox_email()
+    {
+        return view('admin.profile.inbox_email');
+    }
+
+
+       
+
 
 }

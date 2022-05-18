@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BH12vcHrJPFgeYMk',
+            '_route' => 'generated::jSJNiBR2kWFhokBG',
           ),
           1 => NULL,
           2 => 
@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7wU83eGHN9XbN5XQ',
+            '_route' => 'generated::mpJn6jnFaHhb2pnE',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KXYroCMjinjXAj4m',
+            '_route' => 'generated::2mJA6OWkBBNbb4Wu',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::M2W6jC525DwPN0va',
+            '_route' => 'generated::4fszNIsWGrpx8KJI',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LTx2VYHaV0vcG96g',
+            '_route' => 'generated::WFvHFVcgr7QeaXO4',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::rFmRcaIC8a7W0mKI',
+            '_route' => 'generated::vvjdwvvGjlwHcX7O',
           ),
           1 => NULL,
           2 => 
@@ -433,6 +433,158 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/admin/admin-dashboard' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin_dashboard',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/inbox-email' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'inbox_email',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/adminprofilesetting' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/adminprofilesetting/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/change-password' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/change-password/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/admin/logout' => 
       array (
         0 => 
@@ -456,7 +608,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/email/verify/([^/]++)/([^/]++)(*:69))/?$}sDu',
+      0 => '{^(?|/password/reset/([^/]++)(*:31)|/email/verify/([^/]++)/([^/]++)(*:69)|/admin/(?|adminprofilesetting/([^/]++)(?|(*:117)|/edit(*:130)|(*:138))|change\\-password/([^/]++)(?|(*:175)|/edit(*:188)|(*:196))))/?$}sDu',
     ),
     3 => 
     array (
@@ -506,7 +658,183 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      117 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.show',
+          ),
+          1 => 
+          array (
+            0 => 'adminprofilesetting',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      130 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.edit',
+          ),
+          1 => 
+          array (
+            0 => 'adminprofilesetting',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      138 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.update',
+          ),
+          1 => 
+          array (
+            0 => 'adminprofilesetting',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'adminprofilesetting.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'adminprofilesetting',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      175 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.show',
+          ),
+          1 => 
+          array (
+            0 => 'change_password',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      188 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.edit',
+          ),
+          1 => 
+          array (
+            0 => 'change_password',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      196 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.update',
+          ),
+          1 => 
+          array (
+            0 => 'change_password',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'change-password.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'change_password',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
         array (
           0 => NULL,
           1 => NULL,
@@ -522,7 +850,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::BH12vcHrJPFgeYMk' => 
+    'generated::jSJNiBR2kWFhokBG' => 
     array (
       'methods' => 
       array (
@@ -543,7 +871,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::BH12vcHrJPFgeYMk',
+        'as' => 'generated::jSJNiBR2kWFhokBG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -668,7 +996,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7wU83eGHN9XbN5XQ' => 
+    'generated::mpJn6jnFaHhb2pnE' => 
     array (
       'methods' => 
       array (
@@ -685,13 +1013,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:297:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:79:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000068f292240000000077d831de";}";s:4:"hash";s:44:"hi/gBYM+xvuWvM9ieu1T1cEGwaqM/Y23eTBdPV8g0LE=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000039e33d23000000006d33768f";}";s:4:"hash";s:44:"i10yXR1ssRbdMvrjzJ4YLXBWMWbKJNOw+yLewoLJ5Cg=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::7wU83eGHN9XbN5XQ',
+        'as' => 'generated::mpJn6jnFaHhb2pnE',
       ),
       'fallback' => false,
       'defaults' => 
@@ -707,7 +1035,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KXYroCMjinjXAj4m' => 
+    'generated::2mJA6OWkBBNbb4Wu' => 
     array (
       'methods' => 
       array (
@@ -723,13 +1051,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:264:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:46:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000068f292260000000077d831de";}";s:4:"hash";s:44:"/YS2lo7g4OhSwSarb0jEcARqGK+K5L4OHAWwXlfU2rc=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000039e33d21000000006d33768f";}";s:4:"hash";s:44:"Eg8Q6hxnAkiAIz0QJzUa8SY2UbTDet9nkOdMjZ0qDcE=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::KXYroCMjinjXAj4m',
+        'as' => 'generated::2mJA6OWkBBNbb4Wu',
       ),
       'fallback' => false,
       'defaults' => 
@@ -782,7 +1110,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::M2W6jC525DwPN0va' => 
+    'generated::4fszNIsWGrpx8KJI' => 
     array (
       'methods' => 
       array (
@@ -802,7 +1130,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::M2W6jC525DwPN0va',
+        'as' => 'generated::4fszNIsWGrpx8KJI',
       ),
       'fallback' => false,
       'defaults' => 
@@ -891,7 +1219,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LTx2VYHaV0vcG96g' => 
+    'generated::WFvHFVcgr7QeaXO4' => 
     array (
       'methods' => 
       array (
@@ -911,7 +1239,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LTx2VYHaV0vcG96g',
+        'as' => 'generated::WFvHFVcgr7QeaXO4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1110,7 +1438,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::rFmRcaIC8a7W0mKI' => 
+    'generated::vvjdwvvGjlwHcX7O' => 
     array (
       'methods' => 
       array (
@@ -1130,7 +1458,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::rFmRcaIC8a7W0mKI',
+        'as' => 'generated::vvjdwvvGjlwHcX7O',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1414,6 +1742,610 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'admin_dashboard' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/admin-dashboard',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@admin_dashboard',
+        'controller' => 'App\\Http\\Controllers\\AdminController@admin_dashboard',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+        'as' => 'admin_dashboard',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'inbox_email' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/inbox-email',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AdminController@inbox_email',
+        'controller' => 'App\\Http\\Controllers\\AdminController@inbox_email',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+        'as' => 'inbox_email',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/adminprofilesetting',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.index',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@index',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@index',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/adminprofilesetting/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.create',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@create',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/adminprofilesetting',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.store',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@store',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/adminprofilesetting/{adminprofilesetting}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.show',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@show',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@show',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/adminprofilesetting/{adminprofilesetting}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.edit',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@edit',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'admin/adminprofilesetting/{adminprofilesetting}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.update',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@update',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'adminprofilesetting.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/adminprofilesetting/{adminprofilesetting}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'adminprofilesetting.destroy',
+        'uses' => 'App\\Http\\Controllers\\AdminProfileSettingController@destroy',
+        'controller' => 'App\\Http\\Controllers\\AdminProfileSettingController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/change-password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.index',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@index',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@index',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/change-password/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.create',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@create',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/change-password',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.store',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@store',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/change-password/{change_password}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.show',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@show',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@show',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/change-password/{change_password}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.edit',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@edit',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'admin/change-password/{change_password}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.update',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@update',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'change-password.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/change-password/{change_password}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.auth',
+        ),
+        'as' => 'change-password.destroy',
+        'uses' => 'App\\Http\\Controllers\\ChangePasswordController@destroy',
+        'controller' => 'App\\Http\\Controllers\\ChangePasswordController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'admin.logout' => 
     array (
       'methods' => 
@@ -1427,6 +2359,7 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
+          1 => 'admin.auth',
         ),
         'uses' => 'App\\Http\\Controllers\\AdminController@logout',
         'controller' => 'App\\Http\\Controllers\\AdminController@logout',

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminProfileSettingController;
+use App\Http\Controllers\AdminSettingController;
+use App\Http\Controllers\ChangePasswordController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -38,9 +41,25 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::get('admin.home', [App\Http\Controllers\AdminController::class, 'adminhome'])->name('admin.home');
 
-   });
+   
+
+
+   Route::get('admin-dashboard', [App\Http\Controllers\AdminController::class, 'admin_dashboard'])->name('admin_dashboard');
+
+   
+   Route::get('inbox-email', [App\Http\Controllers\AdminController::class, 'inbox_email'])->name('inbox_email');
+      
+
+
+   Route::resource('adminprofilesetting', AdminProfileSettingController::class);
+
+   Route::resource('change-password', ChangePasswordController::class);
+
      
    Route::get('logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('admin.logout');
+
+
+});
     
 
 });

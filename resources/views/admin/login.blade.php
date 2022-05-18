@@ -7,8 +7,8 @@
         <div class="row justify-content-center text-center">
             <div class="col-md-7 col-lg-12 col-xl-9">
                 <div>
-                    <span class="db"><img src="../assets/images/logo-light-icon.png" alt="logo" /></span>
-                    <span class="db"><img src="../assets/images/logo-light-text.png" alt="logo" /></span>
+                    <span class="db"><img src="{{ asset('theme/assets/images/logo-light-icon.png')}}" alt="logo" /></span>
+                    <span class="db"><img src="{{ asset('theme/assets/images/logo-light-text.png')}}" alt="logo" /></span>
                 </div>
                 <h2 class="text-white mt-4 fw-light">  <span class="font-weight-medium">{{ __('Admin Login') }}</span>  </h2>
                 <p class="op-5 text-white fs-4 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
