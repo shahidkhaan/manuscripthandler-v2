@@ -12,6 +12,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
+    
     <link rel="canonical" href="https://www.wrappixel.com/templates/materialpro/" />
     
     <!-- Favicon icon -->
@@ -19,6 +20,10 @@
     <link rel="stylesheet" href="{{ asset('theme/assets/libs/apexcharts/dist/apexcharts.css')}}">
     <!-- Custom CSS -->
     <link href="{{ asset('theme/dist/css/style.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/css/bootstrap-toggle.css" integrity="sha512-9tISBnhZjiw7MV4a1gbemtB9tmPcoJ7ahj8QWIc0daBCdvlKjEA48oLlo6zALYm3037tPYYulT0YQyJIJJoyMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    
 
     <!-- ============================================================== -->
     <!-- All Jquery -->
@@ -343,7 +348,16 @@
                                     <li>
                                         <div class="message-center message-body position-relative"
                                             style="height:230px;">
-                                            <!-- Message -->
+                                            $mh_journals_checklist =  mh_journals_checklist::updateOrCreate(
+            ['id' => $request->id],
+
+            [
+                 'journalID' => $request->journalid,
+
+                'description' => $request->description,
+
+            ]
+        );         <!-- Message -->
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
                                                 <span class="user-img position-relative d-inline-block"> <img
@@ -580,9 +594,22 @@
 
 
                         
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#"
-                                aria-expanded="false"><i class="icon-people"></i>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('users.index')}}"
+                                aria-expanded="false">
                                 <span class="hide-menu">User</span></a>
+                        </li>
+
+              
+
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('journals.index')}}"
+                                aria-expanded="false">
+                                <span class="hide-menu">Journals Management</span></a>
+                        </li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('newseventsmanagment.index')}}"
+                             aria-expanded="false">
+                                <span class="hide-menu">News & Events Managment</span></a>
                         </li>
 
 
@@ -1723,6 +1750,9 @@
     <script src="{{ asset('theme/assets/libs/apexcharts/dist/apexcharts.min.js')}}"></script>
     <!-- Chart JS -->
     <script src="{{ asset('theme/dist/js/pages/dashboards/dashboard1.js')}}"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha512-F636MAkMAhtTplahL9F6KmTfxTmYcAcjcCkyu0f0voT3N/6vzAuJ4Num55a0gEJ+hRLHhdz3vDvZpf6kqgEa5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  
 
  

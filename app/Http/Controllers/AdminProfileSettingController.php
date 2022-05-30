@@ -87,6 +87,6 @@ class AdminProfileSettingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
 }
